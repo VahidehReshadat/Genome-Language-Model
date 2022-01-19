@@ -16,10 +16,11 @@ The content of the main.R file is as the follow.
 
 **Libraries**
 *library(keras)*: For deep learning
+
 *library(stringr)*: For working with strings
 
-Sources
-It contains sources for applying different functions.
+**Sources**
+It contains the sources for applying different functions.
 source("Embedding.R") : For embedding the input
 source("Partioning.R") : For portioning the data
 source("Building.R") : For building the neural network model
