@@ -16,7 +16,7 @@ The content of the main.R file is as the follow.
 
 **Libraries**
 
-*library(keras)*: For deep learning
+`library(keras)`: For deep learning
 
 *library(stringr)*: For working with strings
 
