@@ -63,14 +63,16 @@ The content of the main.R file is as the follow.
  
 **Evaluating**: Training data evaluation
 
--Training data loss and accuracy are calculated and shown.
+- Training data loss and accuracy are calculated and shown.
 
--Confusion matrix for training data samples is shown. The first row is for actual classes and the first column is for the predicted classes. The other values show the indexes of the character
+- Confusion matrix for training data samples is shown. The first row is for actual classes and the first column is for the predicted classes. The other values show the indexes of the character.
 
 - The predicted probability distribution for each training data sample over each class is shown.
 
-`     LossAcc(myModel, trainxx, trainyy)  
+`     LossAcc(myModel, trainxx, trainyy)
+
     calConfusion(predLossAccTrain, traintrainy, seqs)
+    
     predictedDistributionTrain= probDist(myModel, trainxx, predLossAccTrain, traintrainy, seqs)`
 
 **Test data evaluation**: The same functions are also used for evaluating the test data. 
