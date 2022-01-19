@@ -56,6 +56,13 @@ The content of the main.R file is as the follow.
 ` BuildingModel(128, 0.2, seqLen, chrs, 0.002)`
 
 
+**Attention layer**: 
+Using the attention mechanism, the sequence data is encoded by assigning an importance score to each element of the sentence. Attentions were applied over the outputs of LSTM in the form of trainable weights.
+
+`AttentionLayer(numChars, sequenceLength, hiddenLayerDistri) `
+
+
+
 **Fitting the model**: The model is trained on the train data and 20% of the train data is used as the validation set. Two plots are created based on the iterations which show the loss and accuracy of the training and validation data over epochs. The visualize model of training history for accuracy and loss also are created.
 
  ` fittingModel(myModel, trainxx, trainyy, 32, 16, 0.2)`
@@ -81,4 +88,6 @@ predictedDistributionTrain= probDist(myModel, trainxx, predLossAccTrain, traintr
 For instance, the function is called by “TACTAGAGCA”, a sequence of 10 characters.
 
 `    PredictNextCharacter("TACTAGAGCA", 6,  myModel, x, y, seqLen, chrs)`
+
+
 
