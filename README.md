@@ -69,7 +69,7 @@ The content of the main.R file is as the follow.
 
 - The predicted probability distribution for each training data sample over each class is shown.
 
-`     LossAcc(myModel, trainxx, trainyy)
+    `LossAcc(myModel, trainxx, trainyy)
 
     calConfusion(predLossAccTrain, traintrainy, seqs)
     
