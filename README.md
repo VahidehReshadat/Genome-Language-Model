@@ -69,11 +69,13 @@ The content of the main.R file is as the follow.
 
 - The predicted probability distribution for each training data sample over each class is shown.
 
-```LossAcc(myModel, trainxx, trainyy)
+```
+LossAcc(myModel, trainxx, trainyy)
 
 calConfusion(predLossAccTrain, traintrainy, seqs)
     
-predictedDistributionTrain= probDist(myModel, trainxx, predLossAccTrain, traintrainy, seqs)```
+predictedDistributionTrain= probDist(myModel, trainxx, predLossAccTrain, traintrainy, seqs)
+```
 
 **Test data evaluation**: The same functions are also used for evaluating the test data. 
 
