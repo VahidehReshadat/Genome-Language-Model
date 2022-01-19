@@ -75,7 +75,7 @@ The content of the main.R file is as the follow.
 
 **Test data evaluation**: The same functions are also used for evaluating the test data. 
 
-**Predictions**: This function takes a sequence with the size of `seqLen ()` and generates the next character with high probability. For some epochs, the model is fitted with the whole dataset and after embedding, it prints the probability distributions over the output classes and chooses the most probable character and prints it. This procedure is continued while it gets the point character (.). 
+**Predictions**: This function takes a sequence with the size of `seqLen ()` and generates the next character with high probability. For some epochs, the model is fitted with the whole dataset and after embedding, it prints the probability distributions over the output classes and chooses the most probable character and prints it. This procedure is continued while it gets the special nucleotides character (e.g. T) or after a predetermined number of prediction. 
 For instance, the function is called by “TACTAGAGCA”, a sequence of 10 characters.
 
 `    PredictNextCharacter("TACTAGAGCA", 6,  myModel, x, y, seqLen, chrs)`
