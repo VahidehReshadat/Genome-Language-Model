@@ -71,9 +71,7 @@ The content of the main.R file is as the follow.
 
 ```
 LossAcc(myModel, trainxx, trainyy)
-
-calConfusion(predLossAccTrain, traintrainy, seqs)
-    
+calConfusion(predLossAccTrain, traintrainy, seqs)   
 predictedDistributionTrain= probDist(myModel, trainxx, predLossAccTrain, traintrainy, seqs)
 ```
 
