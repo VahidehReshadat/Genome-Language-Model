@@ -14,10 +14,9 @@ Requirements: R (3.6+), Keras
 
 The content of the main.R file is as the follow.
 
-Libraries
-library(keras): For deep learning
-
-library(stringr): For working with strings
+**Libraries**
+*library(keras)*: For deep learning
+*library(stringr)*: For working with strings
 
 Sources
 It contains sources for applying different functions.
